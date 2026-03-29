@@ -1,3 +1,8 @@
+// zaawansowana biblioteka
+
+#define FUCKWINDOWSSIGNAL "The developers of this library want to send a fuck Windows signal. " \
+                          "Use a normal operating system."
+
 #pragma once
 
 #include <array>
@@ -35,9 +40,7 @@ namespace Math {
         std::array<Math::Interval, 2> Difference(Interval& Intv);
     };
 
-    struct Collection {
-        
-    };
+    struct Collection {};
 
     const Interval realInterval    = Interval(-INF, INF);
     const Interval integerInterval = Interval(-INF, INF, false, false, false);
