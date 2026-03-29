@@ -1,5 +1,6 @@
 #pragma once
 
+#include <array>
 #include <limits>
 
 namespace Math {
@@ -20,9 +21,22 @@ namespace Math {
             : Min(Mn), Max(Mx), ClosedLeft(ClL), ClosedRight(ClR), Whole(Wh) {};
 
         int  Size();
+        void Print(bool Color = true);
+
         bool Contains(double Num);
         bool Contains(Interval& Intv);
-        void Print(bool Color = true);
+        bool Intersects(Interval& Intv);
+        bool Disjoined(Interval& Intv);
+        bool Adjacent(Interval& Intv);
+
+        Interval Union(Interval& Intv);
+        Interval Intersection(Interval& Intv);
+        Interval Gap(Interval& Intv);
+        std::array<Math::Interval, 2> Difference(Interval& Intv);
+    };
+
+    struct Collection {
+        
     };
 
     const Interval realInterval    = Interval(-INF, INF);
