@@ -2,6 +2,8 @@
 
 #include <array>
 #include <limits>
+#include <unordered_set>
+#include <functional>
 
 namespace Math {
     static constexpr double PI   = 3.141592653589793;
@@ -36,7 +38,15 @@ namespace Math {
     };
 
     struct Collection {
-        
+        std::unordered_set<double> Elements;
+
+        int  Size();
+        void Print(bool Color = true);
+        void Set(std::unordered_set<double> Dat);
+        void Add(double Num);
+
+        bool Contains(double Num);
+        bool Contains(Collection& Coll);
     };
 
     const Interval realInterval    = Interval(-INF, INF);
