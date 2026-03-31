@@ -10,7 +10,7 @@ int main() {
     B.Set({10, 55, 1});
     C.Set({5, 7});
     A.Print();
+    std::cout << A.Size();
     std::cout << A.Contains(B) << "\n";
     std::cout << A.Contains(C) << "\n";
-    std::cout << A.Size();
 }
