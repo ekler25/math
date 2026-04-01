@@ -45,6 +45,11 @@ namespace Math {
         void Set(std::unordered_set<double> Dat);
         void Add(double Num);
 
+        double  Min();
+        double  Max();
+        double  Avg();
+        double  Sum();
+
         bool Contains(double Num);
         bool Contains(Collection& Coll);
     };
