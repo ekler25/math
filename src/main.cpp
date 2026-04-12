@@ -14,4 +14,7 @@ int main() {
     std::cout << A.Max() << "\n";
     std::cout << A.Avg() << "\n";
     std::cout << A.Sum() << "\n";
+
+    std::cout << "|-10| = " << Math::abs(-10) << "\n";
+    std::cout << "|10|  = " << Math::abs(10);
 }

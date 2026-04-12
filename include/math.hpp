@@ -58,4 +58,6 @@ namespace Math {
     const Interval integerInterval = Interval(-INF, INF, false, false, true);
     const Interval wholeInterval   = Interval(0, INF, false, false, true);
     const Interval naturalInterval = Interval(1, INF, false, false, true);
+
+    double abs(double Num);
 }

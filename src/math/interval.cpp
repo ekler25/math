@@ -1,5 +1,4 @@
 #include <iostream>
-#include <array>
 #include <math.hpp>
 
 int Math::Interval::Size() {
