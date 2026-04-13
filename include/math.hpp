@@ -60,4 +60,5 @@ namespace Math {
     const Interval naturalInterval = Interval(1, INF, false, false, true);
 
     double abs(double Num);
+    double exp(double Num);
 }
